@@ -8,8 +8,12 @@ public class PowerFuncton {
 		int sum = 0;
 		
 		
-		for(int ele: num) {
-			sum += ele;
+//		for(int ele: num) {
+//			sum += ele;
+//		}
+		
+		for(int i = 0; i<num.length; i++) {
+			sum += num[i];
 		}
 		
 		return sum;
