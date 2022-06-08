@@ -1,4 +1,4 @@
-package oop;
+package com.globalpayex.college.entities;
 
 public class Student {
 
@@ -7,21 +7,25 @@ public class Student {
 	int roll;
 	float marks;
 	
-	Student(String name, char gender, int roll, float marks){
+	public static int count;
+	
+	public Student(String name, char gender, int roll, float marks){
 		this.name = name;
 		this.gender = gender;	
 		this.roll = roll;
 		this.marks = marks;
 	}
 	
-	String getDetails() {
+	public String getDetails() {
 		String str = "";
 //		str = "Name: " + this.name + '\n' + "Gender: " + this.gender + '\n' 
 //				+ "Roll: " + this.roll + '\n' + "Marks: " + this.marks;
 //		
 //		return str;
 		
-		str = String.format("Name: %s\n Gender: %s\n Roll: %s\nMarks: %s", this.name, this.gender
+		++count;
+		
+		str = String.format("Name: %s\nGender: %s\nRoll: %s\nMarks: %s\n", this.name, this.gender
 				, this.roll, this.marks);
 		
 		return str;
@@ -34,7 +38,7 @@ public class Student {
 	 * }
 	 */
 	
-	String getGrade() {
+	public String getGrade() {
 		
 		if(this.marks < 0 || this.marks >100) {
 			return "I";

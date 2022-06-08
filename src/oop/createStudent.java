@@ -1,5 +1,7 @@
 package oop;
 
+import com.globalpayex.college.entities.Student;
+
 public class createStudent {
 
 	public static void main(String[] args) {
@@ -16,7 +18,7 @@ public class createStudent {
 		Student s2 = new Student("XYZ", 'F', 1805394, 78f);
 		Student s3 = new Student("Manish", 'M', 1805394, 59f);
 		
-		System.out.println(s1.getDetails());
+		System.out.println(s1.getDetails() + "The count is: " + s1.count);
 		
 		//Internal working
 		
