@@ -1,6 +1,6 @@
 package oop;
 
-import com.globalpayex.college.entities.Student;
+import com.globalpayex.college.entities.StudentOld;
 
 public class createStudent {
 
@@ -14,9 +14,9 @@ public class createStudent {
 //		s1.marks = 50f;
 		
 		
-		Student s1 = new Student("Kaushik", 'M', 1805393, 89f);
-		Student s2 = new Student("XYZ", 'F', 1805394, 78f);
-		Student s3 = new Student("Manish", 'M', 1805394, 59f);
+		StudentOld s1 = new StudentOld("Kaushik", 'M', 1805393, 89f);
+		StudentOld s2 = new StudentOld("XYZ", 'F', 1805394, 78f);
+		StudentOld s3 = new StudentOld("Manish", 'M', 1805394, 59f);
 		
 		System.out.println(s1.getDetails() + "The count is: " + s1.count);
 		
