@@ -1,57 +1,39 @@
 package com.globalpayex.college.entities;
 
-public class Student {
+public class Student extends CollegeUser{
 
-	String name;
-	char gender;
+//	String name;
+//	char gender;
 	int roll;
 	float marks;
 	
-	public static int count;
-	
-	public Student(String name, char gender, int roll, float marks){
-		this.name = name;
-		this.gender = gender;	
+	public Student(String name, char gender, int roll, float marks) {
+//		super();
+		//Internally super
+		/*
+		 * CollegeUSer(this)
+		 */
+		
+//		this.name = name;
+//		this.gender = gender;
+		
+		super(name, gender);
 		this.roll = roll;
 		this.marks = marks;
 	}
 	
+	@Override
 	public String getDetails() {
-		String str = "";
-//		str = "Name: " + this.name + '\n' + "Gender: " + this.gender + '\n' 
-//				+ "Roll: " + this.roll + '\n' + "Marks: " + this.marks;
-//		
-//		return str;
+		// TODO Auto-generated method stub
+//		return String.format("name: %s\nGender: %s\nRoll: %s\nMarks: %s", name, gender, roll, marks);
+		String stre = super.getDetails();
+		/*
+		 * CollegeUser.getDetails(this);
+		 */
 		
-		++count;
+		return String.format("%s\nRoll: %s\nMarks: %s", stre, roll, marks);
 		
-		str = String.format("Name: %s\nGender: %s\nRoll: %s\nMarks: %s\n", this.name, this.gender
-				, this.roll, this.marks);
-		
-		return str;
 	}
 	
-	/* Internal Working
-	 * 
-	 * String getDetails(Student this){
-	 * 
-	 * }
-	 */
 	
-	public String getGrade() {
-		
-		if(this.marks < 0 || this.marks >100) {
-			return "I";
-		}
-		
-		if(this.marks >= 70) {
-			return "A";
-		}else if(this.marks >= 60 && this.marks < 70) {
-			return "B";
-		}else if(this.marks >= 40 && this.marks < 60) {
-			return "C";
-		}else {
-			return "F";
-		}
-	}
 }
