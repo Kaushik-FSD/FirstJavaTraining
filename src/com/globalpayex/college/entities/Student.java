@@ -1,11 +1,13 @@
 package com.globalpayex.college.entities;
 
+import java.util.Objects;
+
 public class Student extends CollegeUser{
 
 //	String name;
 //	char gender;
-	int roll;
-	float marks;
+	public int roll;
+	public float marks;
 	
 	public Student(String name, char gender, int roll, float marks) {
 //		super();
@@ -34,6 +36,31 @@ public class Student extends CollegeUser{
 		return String.format("%s\nRoll: %s\nMarks: %s", stre, roll, marks);
 		
 	}
+
+	@Override
+	public int hashCode() {
+//		final int prime = 31;
+//		int result = 1;
+//		result = prime * result + roll;
+//		return result;
+		return Objects.hash(roll);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		if (roll != other.roll)
+			return false;
+		return true;
+	}
+
+
 	
 	
 }
