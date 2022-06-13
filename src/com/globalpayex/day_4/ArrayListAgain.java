@@ -32,11 +32,11 @@ public class ArrayListAgain {
 		System.out.println(arr);
 		
 		//using external class
-//		arr.sort(new DescendingComparator());
+		arr.sort(new DescendingComparator());
 //		***************************************************************
 		
 		//using inner class
-//		arr.sort(new DescendingComparator2());
+		arr.sort(new DescendingComparator2());
 
 //		***************************************************************
 		

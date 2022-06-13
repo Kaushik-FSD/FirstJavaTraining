@@ -23,7 +23,13 @@ public class Student extends CollegeUser{
 		this.roll = roll;
 		this.marks = marks;
 	}
-	
+
+	public Student(String name, char gender, int roll, float marks,  Address address) {
+		super(name, gender, address);
+		this.roll = roll;
+		this.marks = marks;
+	}
+
 	@Override
 	public String getDetails() {
 		// TODO Auto-generated method stub

@@ -25,6 +25,13 @@ public class Professor extends CollegeUser implements SalariedIndividual{
 		this.subjects = subjects;
 	}
 
+	public Professor(String name, char gender, int costPerDay, int workingDays, String[] subjects, Address address) {
+		super(name, gender, address);
+		this.costPerDay = costPerDay;
+		this.workingDays = workingDays;
+		this.subjects = subjects;
+	}
+
 	@Override
 	public int getNoOfDaysWorked() {
 		// TODO Auto-generated method stub
