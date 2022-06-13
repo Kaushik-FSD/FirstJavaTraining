@@ -1,5 +1,5 @@
 //import com.abc.salary.SalariedCalculator;
-import com.abc.salary.SalariedCalculator;
+// import com.abc.salary.SalariedCalculator;
 import com.globalpayex.college.entities.Address;
 import com.globalpayex.college.entities.Professor;
 import com.globalpayex.college.entities.Student;
@@ -48,7 +48,7 @@ public class RunCollege {
 		System.out.println(p1);
 		
 //		SalariedCalculator sc = new SalariedCalculator();
-		System.out.println(SalariedCalculator.calculate(p1));
+		// System.out.println(SalariedCalculator.calculate(p1));
 		
 		System.out.println(p1.calculate());
 	}
