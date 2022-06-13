@@ -20,8 +20,9 @@ public class RunCollege {
 		String subArr[] = {"Java", "DBMS"};
 //		Professor p1 = new Professor("Mehul Chopra", 'M', subArr);
 		Professor p1 = new Professor("Mehul Chopra", 'M', 1000, 24, subArr);
-		// System.out.println(p1.getDetails());
-		// System.out.println(p1.isAddressPresent());
+		
+		System.out.println(p1.isAddressPresent());
+		System.out.println(p1.getDetails());
 
 
 		
