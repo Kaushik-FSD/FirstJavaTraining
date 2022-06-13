@@ -24,7 +24,7 @@ public class findStudents {
 				.map(ele -> ele.name)
 				.collect(Collectors.joining(","));
 		
-		// System.out.println(s);
+		System.out.println(s);
 
 		String usaAdd = list.stream()
 			.filter(ele -> ele.isAddressPresent() && ele.getAddress().getCountry().equals("USA"))

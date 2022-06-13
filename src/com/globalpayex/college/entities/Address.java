@@ -9,7 +9,7 @@ public class Address {
     
     public Address(String pin, String country, String state) {
         this.pin = pin;
-        Country = country;
+        this.Country = country;
         this.State = state;
     }
 
